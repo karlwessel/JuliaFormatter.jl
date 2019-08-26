@@ -17,7 +17,7 @@ format_file(file::AbstractString; indent = 4, margin = 92, overwrite = true)
 format(paths...; indent = 4, margin = 92, overwrite = true)
 ```
 
-The `text` argument to `format_text` is a string containing the code to be formatted; the formatted code is retuned as a new string. The `file` argument to `format_file` is the path of a file to be formatted. The `format` function is either called with a singe string to format if it is a `.jl` file or to recuse into looking for `.jl` files if it is a directory. It can also be called with a collection of such paths to iterate over.
+The `text` argument to `format_text` is a string containing the code to be formatted; the formatted code is returned as a new string. The `file` argument to `format_file` is the path of a file to be formatted. The `format` function is either called with a single string to format if it is a `.jl` file or to recurse into looking for `.jl` files if it is a directory. It can also be called with a collection of such paths to iterate over.
 
 *Options:*
 
